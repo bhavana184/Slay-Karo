@@ -596,4 +596,22 @@ section{
     /* left: 13vw; */
     top: 39vh;
 }
-}
+}/*414px ends*/
+@media only screen and (max-width: 375px){
+  .footer-text {
+    width: 76%;
+    left: 10vw;
+    top:32vh;
+  }
+  .email {
+    width: 78%;
+    left:9vw;
+  }
+  .social-media-icons {
+    left: 26vw;
+    width: 31%;
+  }
+}/*375px ends*/
+@media only screen and (max-width: 360px){
+
+}/*360px ends*/

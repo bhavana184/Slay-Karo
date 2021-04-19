@@ -549,6 +549,9 @@ section{
 .image-center-section{
   display: none;
 }
+/* .image-section{
+  display:none;
+} */
 /*Adding over class to reduce opacity of arrow*/
 .over{
   opacity:0.2;
@@ -779,7 +782,7 @@ section{
   top: -223vh;
   /* z-index:-4; */
   margin-bottom:-223vh;/*to remove whitespace after footer section*/
-  /* border:2px solid blue; */
+  border:2px solid blue;
 }
 .footer-text{
   position: absolute;
@@ -1260,6 +1263,7 @@ section{
 }
 #code {
     top: 5rem;
+    font-size:1.8rem;
 }
 .input-below {
     top: 7.5rem;
@@ -1267,8 +1271,9 @@ section{
 }
 .mob_no_input {
     left: 6rem;
-    top: 4.7rem;
+    top: 4.6rem;
     width: 43vw;
+    font-size:1.8rem;
 }
 .get_app_link_button button {
     height: 8vh;
@@ -1284,19 +1289,20 @@ section{
     border:2px solid;
 }
 .features {
-    height: 194vh;
+    height: 161vh;
+    top:-21vh;
     border: 2px solid brown;
 }
 .features-heading {
     font-size: 3rem;
-    top: 22vh;
+    top: 18vh;
 }
 .instant-withdrawl {
-    height: 24vh;
-    width: 71vw;
-    left: 15vw;
-    top: 68vh;
-    border: 1px solid black;
+  height: 19vh;
+  width: 71vw;
+  left: 15vw;
+  top: 59vh;
+  border: 1px solid black;
 }
 .heading {
     /* font-size: 2rem; */
@@ -1304,26 +1310,33 @@ section{
 }
 .body {
     top: 8vh;
-    /* font-size: 1.8rem; */
+    font-size: 1.5rem;
 }
 .win-real-cash {
-    height: 24vh;
-    width: 74vw;
-    left: 14vw;
-    top: 136vh;
-    border: 1px solid black;
+  height: 20vh;
+  width: 74vw;
+  left: 14vw;
+  top: 114vh;
+  border: 1px solid black;
 }
 .testimonials{
-  height: 145vh;
+  top:-47vh;
+  height: 131vh;
+}
+.testimonials-heading {
+    font-size: 3.5rem;
+    top:21vh;
 }
 .image-center-section {
     height: 51vh;
-    width: 87vw;
+    width: 81vw;
+    top:34vh;
+    left:9vw;
 }
 .testimonial-1 {
     height: 46vh;
     width: 50vw;
-    top: 42vh;
+    top: 36vh;
     left: 25vw;
 }
 .photo {
@@ -1340,46 +1353,46 @@ section{
 }
 .aboutus-leftarrow {
     width: 8.5%;
-    top: 57vh;
+    top: 52vh;
     left:1.5vw;
 }
 .aboutus-rightarrow {
     width: 8.5%;
-    top: 57vh;
-    left:91vw;
+    top: 52vh;
+    left:90vw;
 }
 .downloads {
-    height: 194vh;
+    height: 179vh;
     background-size: 133% 100%;
 }
 .downloads-heading {
     height: 14vh;
     width: 51vw;
     left: 25vw;
-    top: 42vh;
+    top: 49vh;
 }
 .game-screen {
-    height: 70vh;
-    top: 58vh;
+  height: 56vh;
+  top: 60vh;
     border: 2px solid black;
 }
 .game-screen2 {
-    height: 49vh;
-    width: 52vw;
-    top: 7vh;
-    left: 0vw;
+  height: 45vh;
+  width: 51vw;
+  top: 0vh;
+  left: 0vw;
     border: 2px solid green;
 }
 .game-screen3 {
-    height: 48vh;
-    width: 53.5vw;
-    top: 31vh;
-    left: 43vw;
+  height: 48vh;
+  width: 53.5vw;
+  top: 9vh;
+  left: 43vw;
     border: 2px solid green;
 }
 .contact-section {
     top: -139vh;
-    height: 101vh;
+    height: 115vh;
     border:2px solid yellow;
 }
 .contact-heading {
@@ -1404,7 +1417,7 @@ section{
     font-size: 1.6rem;
 }
 .footer-1 {
-    top: -164vh;
+    top: -166vh;
     height:48vh;
 }
 .footer-text {
@@ -1459,4 +1472,108 @@ section{
     top:4vh;
     /* border: 2px solid blue; */
 }
+#snackbar {
+    left: 15%;
+    bottom:20rem;
+    font-size: 1.3rem;
 }
+#snackbar1 {
+  left: 15%;
+  bottom:20rem;
+  font-size: 1.3rem;
+}
+}/*414px ends*/
+@media only screen and (max-width: 375px){
+  .phone_no_input {
+      top: 36vh;
+      height: 30vh;
+      width: 89vw;
+  }
+  .get_app_link_button {
+    width: 50vw;
+    top: 19vh;
+    height: 11vh;
+  }
+  .get_app_link_button button {
+    height: 10vh;
+  }
+  .mob_no_input {
+    left: 5rem;
+  }
+  .instant-withdrawl {
+    width: 78vw;
+    left: 12vw;
+  }
+  .text {
+    width: 48vw;
+    left: 0.5vw;
+  }
+  .text-heading {
+    font-size: 1.5rem;
+  }
+  .text-body {
+    top: 9vh;
+    font-size: 1rem;
+  }
+  .form-in {
+    top: 27vh;
+  }
+  .submit-button {
+    top: 49vh;
+  }
+  #snackbar #snackbar1 {
+    left: 11%;
+    bottom: 9rem;
+    font-size: 1.3rem;
+  }
+  .footer-text {
+    width: 76%;
+    left: 10vw;
+  }
+  .email {
+    width: 78%;
+    left:9vw;
+  }
+  .social-media-icons {
+    left: 26vw;
+    width: 31%;
+  }
+}/*375px ends*/
+@media only screen and (max-width: 360px){
+  #code {
+    left: 1rem;
+  }
+  .mob_no_input {
+    left: 4rem;
+    top:4.7rem;
+    width:45vw
+    /* border: 2px solid red; */
+  }
+  .input-below {
+    width: 55vw;
+    left:2rem;
+  }
+  .features {
+    height: 168vh;
+  }
+  .instant-withdrawl {
+    width: 79vw;
+  }
+  .win-real-cash {
+    top: 118vh;
+  }
+  .footer-text {
+    width: 78%;
+    left: 8vw;
+  }
+  #snackbar {
+    left: 10%;
+    bottom: 6rem;
+    padding: 7px 20px;
+  }
+  #snackbar1 {
+    left: 10%;
+    bottom: 6rem;
+    padding: 7px 20px;
+  }
+}/*360px ends*/

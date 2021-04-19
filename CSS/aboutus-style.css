@@ -695,4 +695,42 @@ section{
     top:4vh;
     /* border: 2px solid blue; */
 }
-}
+}/*414px ends*/
+@media only screen and (max-width: 375px){
+  .center-text-body {
+    top: 14vh;
+  }
+  .aboutus-rightarrow {
+    top: 48vh;
+  }
+  .aboutus-leftarrow{
+    top: 48vh;
+  }
+  .footer-text {
+    width: 76%;
+    left: 10vw;
+  }
+  .email {
+    width: 78%;
+    left:9vw;
+  }
+  .social-media-icons {
+    left: 26vw;
+    width: 31%;
+  }
+}/*375px ends*/
+@media only screen and (max-width: 360px){
+  .aboutus-text {
+    width: 91%;
+    left: 4vw;
+  }
+  .aboutus-leftarrow {
+    top: 50vh;
+  }
+  .aboutus-rightarrow {
+    top: 50vh;
+  }
+  .footer-1 {
+    top: -22vh;
+  }
+}/*360px ends*/

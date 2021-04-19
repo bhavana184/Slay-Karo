@@ -666,4 +666,46 @@ section{
 .terms-highlighted{
   font-size: 0.9rem !important ;
 }
-}
+}/*414px ends*/
+@media only screen and (max-width: 375px){
+  .footer-1 {
+    top: -64vh;
+  }
+  .footer-text {
+    width: 76%;
+    left: 10vw;
+    /* top:32vh; */
+  }
+  .email {
+    width: 78%;
+    left:9vw;
+  }
+  .social-media-icons {
+    left: 26vw;
+    width: 31%;
+  }
+  #section-home {
+    height: 50rem;
+  }
+  .terms-heading {
+    font-size: 2.4rem;
+    top: 31vh;
+  }
+  .text-1 {
+    top: 16rem;
+    height: 19%;
+  }
+  #section-term {
+    height: 380rem;
+    /* top: -27vh; */
+  }
+}/*375px ends*/
+@media only screen and (max-width: 360px){
+  #section-term {
+    height: 390rem;
+  }
+  .footer-1 {
+    top: -67vh;
+  }
+
+}/*360px ends*/
