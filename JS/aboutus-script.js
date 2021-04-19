@@ -1,20 +1,18 @@
+/*
 const hamIcon = document.querySelector(".drop-down");
 const hamBar = document.querySelector(".nav-ham");
 const cross = document.querySelector(".ham-cross");
 
 hamIcon.onclick =  function(){
-  // hamBar.style.display = "block";
   document.querySelector('.nav-ham').style.width="45.5vw";
 }
 
 cross.onclick = function(){
-  // hamBar.style.display = "none";
   document.querySelector('.nav-ham').style.width="0";
 }
-
+*/
 /*ABOUT US CAROUSEL STARTS*/
 /*Carousel*/
-/*
 var carousel1 = document.getElementById('newFtrbtn_div');
 var firstVal1 = 0;
 document.getElementById('newFtrbtn1_div').classList.add("over");
@@ -85,108 +83,4 @@ carousel1.addEventListener("click", function(){
   }
 
 });
-*/
 /*ABOUT US CAROUSEL ENDS*/
-
-
-
-// Contact us //
-function send_msg() {
-  console.log("inside send-msg");
-  var Name = document.getElementById("user_name").value;
-  var Number = document.getElementById("user_num").value;
-  var Message = document.getElementById("user_msg").value;
-  var Email = document.getElementById("user_email").value;
-
-
-  var proceed = true;
-  if(Name == ""){
-    proceed = false;
-  }
-
-  if(Number == ""){
-    proceed = false;
-  }
-
-  if(Message == ""){
-    proceed = false;
-  }
-
-  if(Email == ""){
-    proceed = false;
-  }
-
-  if(proceed){
-
-    var xhttp = new XMLHttpRequest();
-
-    xhttp.open("POST", "https://www.funnearn.com/api/contact-raven", true);
-
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-    xhttp.send('&type=993&name='+Name+'&message='+Message+'&phone='+Number+ '&email='+Email);
-
-
-    xhttp.onreadystatechange = function() {
-      if (xhttp.readyState == 3 && xhttp.status == 200) {
-
-      }
-      else if (xhttp.readyState == 4 && xhttp.status == 200) {
-        document.getElementById("send_btn").style.opacity = "50%";
-        document.getElementById("user_name").value = "";
-        document.getElementById("user_num").value = "";
-        document.getElementById("user_msg").value = "";
-        document.getElementById("user_email").value = "";
-      }
-
-    }
-    var x = document.getElementById("snackbar1");
-   x.className = "show";
-   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-   console.log("displayed snackbar1");
-
-  }else{
-    var x = document.getElementById("snackbar");
-   x.className = "show";
-   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-  // alert("check fields");
-  console.log("displayed snackbar");
-  }
-}
-
-// Contact us //
-
-
-
-//Get app link
-
-function getLink() {
-var phone = document.getElementById("input_num").value;
-console.log(phone);
-
-if (phone) {
-
-var xhttp = new XMLHttpRequest();
-
-xhttp.open("POST", "https://www.funnearn.com/api/lagos/send-downloadable-links", true);
-xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-xhttp.send("type=993&&phone="+phone);
-xhttp.onreadystatechange = function() {
-if (xhttp.readyState == 3 && xhttp.status == 200) {}
-else if (xhttp.readyState == 4 && xhttp.status == 200) {
-document.getElementById("link_btn_div").style.opacity = "50%";
-
-    }
-  }
-  document.getElementById("input_num").value = "";
-  var x = document.getElementById("snackbar1");
-   x.className = "show";
-   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-   console.log("displayed snackbar1");
-  }
-  else{
-    var x = document.getElementById("snackbar");
-   x.className = "show";
-   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-   console.log("displayed snackbar");
-  }
-}

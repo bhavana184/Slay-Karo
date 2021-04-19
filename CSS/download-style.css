@@ -174,7 +174,8 @@ section{
 .nav-ham-text{
   /* border: 1px solid green; */
   height: 120vh;
-  left: 2vw;
+  /* left: 2vw; */ /*changed for placing menu text at center*/
+  left: -4vw;/*changed for placing menu text at center*/
   width: 41vw;
   position: relative;
   bottom: 139vh;
